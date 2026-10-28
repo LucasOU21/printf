@@ -42,7 +42,7 @@ int	ft_print_ud(unsigned int num)
 	result = 0;
 	if (num > 9)
 	{
-		result += ft_print_number(num / 10);
+		result += ft_print_ud(num / 10);
 	}
 	c = num % 10 + '0';
 	result += write(1, &c, 1);
